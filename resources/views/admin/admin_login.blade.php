@@ -48,18 +48,19 @@
                 <!-- Form -->
                 <div class="row">
                     <div class="col-12">
-                        <form class="form-horizontal m-t-20" id="loginform" action="">
+                        <form class="form-horizontal m-t-20" id="loginform" action="" method="post">
+                            @csrf
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
                                 </div>
-                                <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" name="email">
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
                                 </div>
-                                <input type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                <input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="password">
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
