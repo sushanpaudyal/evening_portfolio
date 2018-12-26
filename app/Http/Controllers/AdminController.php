@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use Session;
 
 class AdminController extends Controller
 {
@@ -15,7 +16,7 @@ class AdminController extends Controller
                 'admin'=>'1'])){
                 return redirect()->route('admin.dashboard');
             } else {
-                echo "Failed"; die;
+                return redirect()->route('admin.login')->with('flash_message_error', 'Invalid Username and Password');
             }
         }
         return view ('admin.admin_login');
@@ -24,5 +25,10 @@ class AdminController extends Controller
 
     public function dashboard(){
         return view ('admin.adminLayouts.admin_dashboard');
+    }
+
+    public function logout(){
+        Session::flush();
+        return redirect()->route('admin.login')->with('flash_message_success', 'Log Out Successfull');
     }
 }
