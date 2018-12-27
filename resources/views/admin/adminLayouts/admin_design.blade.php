@@ -81,7 +81,9 @@
                 <!-- ============================================================== -->
                 <ul class="navbar-nav float-right">
 
-
+<?php
+  $current_user = Auth::user();
+?>
 
                     <!-- ============================================================== -->
                     <!-- User profile and search -->
@@ -100,8 +102,8 @@
                                     <img src="{{asset('public/adminpanel/assets/images/users/1.jpg')}}" alt="user" class="img-circle" width="60">
                                 </div>
                                 <div class="m-l-10">
-                                    <h4 class="m-b-0">Steave Jobs</h4>
-                                    <p class=" m-b-0">varun@gmail.com</p>
+                                    <h4 class="m-b-0">{{$current_user->name}}</h4>
+                                    <p class=" m-b-0">{{$current_user->email}}</p>
                                 </div>
                             </div>
                             <a class="dropdown-item" href="javascript:void(0)">
