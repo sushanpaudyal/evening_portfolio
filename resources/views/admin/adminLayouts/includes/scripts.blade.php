@@ -27,3 +27,4 @@
 <script src="{{asset('public/adminpanel/assets/libs/morris.js/morris.min.js')}}"></script>
 
 <script src="{{asset('public/adminpanel/dist/js/pages/dashboards/dashboard1.js')}}"></script>
+@yield('script')

@@ -14,7 +14,7 @@
                     <!-- User Profile-->
                     <div class="user-profile dropdown m-t-20">
                         <div class="user-pic">
-                            <img src="{{asset('public/adminpanel/assets/images/users/1.jpg')}}" alt="users" class="rounded-circle img-fluid" />
+                            <img src="{{asset('public/adminpanel/uploads/profile/'. $current_user->image)}}" alt="users" class="rounded-circle img-fluid" />
                         </div>
                         <div class="user-content hide-menu m-t-10">
                             <h5 class="m-b-10 user-name font-medium">{{$current_user->name}}</h5>
@@ -26,7 +26,7 @@
                                 <i class="ti-power-off"></i>
                             </a>
                             <div class="dropdown-menu animated flipInY" aria-labelledby="Userdd">
-                                <a class="dropdown-item" href="javascript:void(0)">
+                                <a class="dropdown-item" href="{{route('admin.profile', $current_user->id)}}">
                                     <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
                                 <a class="dropdown-item" href="javascript:void(0)">
                                     <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
