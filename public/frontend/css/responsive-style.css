@@ -1,0 +1,227 @@
+/*
+
+[Responsive Stylesheet]
+
+Project     : JD - Responsive Personal vCard / CV / Resume Template
+Version     : 1.0
+Author      : ThemeLooks
+Author URI  : https://themeforest.net/user/themelooks
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+
+[TABLE OF CONTENTS]
+
+1. MEDIA QUERIES
+    1.1. LARGE DEVICES, WIDE SCREENS
+    1.2. MEDIUM DEVICES, DESKTOPS
+    1.3. SMALL DEVICES, TABLETS
+    1.4. SMALL DEVICES, SMARTPHONES
+    1.5. CUSTOM, IPHONE RETINA
+
+*/
+
+/*------------------------------------*\
+    1. MEDIA QUERIES
+\*------------------------------------*/
+/* 1.1. LARGE DEVICES, WIDE SCREENS */
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 992px) {
+    /* VERTICAL CENTERING */
+    .row--md-vc > div {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/* 1.2. MEDIUM DEVICES, DESKTOPS */
+@media screen and (max-width: 991px) {
+    /* TIMELINE ITEMS */
+    .timeline--items > li {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .timeline--items > li:before {
+        left: 13px;
+    }
+
+    .timeline--items > li:nth-child(even) {
+        padding-left: 80px;
+        padding-right: 0;
+    }
+
+    .timeline--items > li:nth-child(even):before {
+        left: 13px;
+        right: auto;
+    }
+
+    .timeline--items > li:nth-child(even) .timeline--item:before {
+        left: -80px;
+        right: auto;
+    }
+
+    .timeline--item .icon {
+        left: -85px;
+    }
+
+    .timeline--items > li:nth-child(even) .timeline--item .icon {
+        left: -85px;
+        right: auto;
+    }
+
+    .timeline--items > li:nth-child(even):last-child:after {
+        left: 0;
+        right: auto;
+    }
+
+    /* COMMENT ITEMS */
+    .comment--items .comment--items {
+        padding-left: 0;
+    }
+
+    /* HEADER SECTION */
+    .header--navbar .navbar-header {
+        float: none;
+    }
+
+    .header--navbar .navbar-toggle {
+        display: block;
+    }
+
+    .header--navbar .navbar-collapse {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-width: 720px;
+        max-height: 320px;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: #181818;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow: auto !important;
+    }
+
+    .header--navbar .navbar-collapse.collapsing,
+    .header--navbar .navbar-collapse.in {
+        display: block !important;
+    }
+
+    .header--nav-links {
+        float: none !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .header--nav-links > li {
+        float: none;
+    }
+
+    .header--nav-links > li + li {
+        margin-top: 20px;
+    }
+
+    .header--nav-links > li > a {
+        display: block;
+    }
+
+    .header--nav-links > li > a:hover:before,
+    .header--nav-links > li.active > a:before {
+        display: none;
+    }
+
+    .header--nav-links > .dropdown > .dropdown-menu {
+        float: none;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .header--nav-links > .dropdown > .dropdown-backdrop {
+        display: none;
+    }
+
+    /* POST ITEM */
+    .post--date + .post--title .h3 {
+        margin-top: -8px;
+    }
+}
+
+/* 1.3. SMALL DEVICES, TABLETS */
+@media screen and (max-width: 767px) {
+    /* TIMELINE ITEMS */
+    .timeline--item .table tbody tr td {
+        display: block;
+    }
+
+    .timeline--item .table tbody tr td + td {
+        border-top-width: 0;
+    }
+
+    /* HEADER SECTION */
+    .header--navbar .navbar-header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header--navbar .navbar-collapse {
+        max-width: none;
+    }
+}
+
+/* 1.4. SMALL DEVICES, SMARTPHONES */
+@media screen and (max-width: 480px) {
+    /* COL XXS */
+    .col-xxs-12 {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* COMMENT LIST */
+    .comment--item .img {
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .comment--item .img:before {
+        top: 0;
+        left: 50%;
+        right: auto;
+        bottom: -20px;
+        margin-top: 0;
+        margin-left: -1px;
+        height: auto;
+        width: 1px;
+    }
+
+    /* POST ITEM */
+    .post--share,
+    .post--nav {
+        float: none;
+    }
+
+    .post--nav {
+        margin-top: 15px;
+    }
+
+    /* 404 CONTENT */
+    .f0f--content .buttons .or {
+        display: block;
+    }
+}
+
+/* 1.5. CUSTOM, IPHONE RETINA */
+@media screen and (max-width: 380px) {
+    
+}

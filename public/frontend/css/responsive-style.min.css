@@ -1,0 +1,18 @@
+/*
+
+[Responsive Stylesheet]
+
+Project     : JD - Responsive Personal vCard / CV / Resume Template
+Version     : 1.0
+Author      : ThemeLooks
+Author URI  : https://themeforest.net/user/themelooks
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+*/
+
+@media screen and (min-width:992px){.row--md-vc>div{float:none;display:table-cell;vertical-align:middle}}@media screen and (max-width:991px){.timeline--items>li{width:100%;margin-left:0}.timeline--items>li:before{left:13px}.timeline--items>li:nth-child(even){padding-left:80px;padding-right:0}.timeline--items>li:nth-child(even):before{left:13px;right:auto}.timeline--items>li:nth-child(even) .timeline--item:before{left:-80px;right:auto}.timeline--item .icon{left:-85px}.timeline--items>li:nth-child(even) .timeline--item .icon{left:-85px;right:auto}.timeline--items>li:nth-child(even):last-child:after{left:0;right:auto}.comment--items .comment--items{padding-left:0}.header--nav-links>li,.header--navbar .navbar-header{float:none}.header--nav-links>li>a,.header--navbar .navbar-toggle{display:block}.header--navbar .navbar-collapse{display:none!important;position:absolute;top:100%;left:0;right:0;max-width:720px;max-height:320px;margin:0 auto;padding:15px;background-color:#181818;box-shadow:0 5px 10px rgba(0,0,0,.1);overflow:auto!important}.header--navbar .navbar-collapse.collapsing,.header--navbar .navbar-collapse.in{display:block!important}.header--nav-links{float:none!important;padding-top:0;padding-bottom:0}.header--nav-links>li+li{margin-top:20px}.header--nav-links>.dropdown>.dropdown-menu{float:none;position:relative;box-shadow:none}.header--nav-links>.dropdown>.dropdown-backdrop,.header--nav-links>li.active>a:before,.header--nav-links>li>a:hover:before{display:none}.post--date+.post--title .h3{margin-top:-8px}}@media screen and (max-width:767px){.timeline--item .table tbody tr td{display:block}.timeline--item .table tbody tr td+td{border-top-width:0}.header--navbar .navbar-header{margin-left:0;margin-right:0}.header--navbar .navbar-collapse{max-width:none}}@media screen and (max-width:480px){.col-xxs-12{float:none;width:100%;margin-left:0;margin-right:0}.comment--item .img{float:none;margin-bottom:20px}.comment--item .img:before{top:0;left:50%;right:auto;bottom:-20px;margin-top:0;margin-left:-1px;height:auto;width:1px}.post--nav,.post--share{float:none}.post--nav{margin-top:15px}.f0f--content .buttons .or{display:block}}

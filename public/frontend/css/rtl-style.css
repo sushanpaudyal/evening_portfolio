@@ -1,0 +1,256 @@
+/*
+
+[RTL Stylesheet]
+
+Project     : JD - Responsive Personal vCard / CV / Resume Template
+Version     : 1.0
+Author      : ThemeLooks
+Author URI  : https://themeforest.net/user/themelooks
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+*/
+
+/*------------------------------------*\
+    GENERAL
+\*------------------------------------*/
+.nav > li {
+    float: right;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-radius: 0;
+}
+
+/*------------------------------------*\
+    BLOCKS
+\*------------------------------------*/
+/* ABOUT BLOCK */
+.about--block .title {
+    padding-left: 0;
+    padding-right: 15px;
+    border-left-width: 0;
+    border-right: 5px solid #181818;
+}
+
+.about--block .title:before {
+    left: auto;
+    right: -5px;
+}
+
+.about--block .info th {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.about--block .info th:after {
+    left: 0;
+    right: auto;
+}
+
+.about--block .info th .fa {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.about--block .info td {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+/* TIMELINE ITEMS */
+.timeline--items > li {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.timeline--items > li:nth-child(even) {
+    margin-right: 50%;
+}
+
+@media screen and (max-width: 991px) {
+    .timeline--items > li {
+        padding-left: 0;
+        padding-right: 80px;
+    }
+
+    .timeline--items > li:nth-child(even) {
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 80px;
+    }
+
+    .timeline--items > li:before {
+        left: auto;
+        right: 13px;
+    }
+
+    .timeline--items > li:nth-child(even):before {
+        left: auto;
+        right: 13px;
+    }
+
+    .timeline--item:before,
+    .timeline--items > li:nth-child(even) .timeline--item:before {
+        left: auto;
+        right: -80px;
+    }
+
+    .timeline--item .icon,
+    .timeline--items > li:nth-child(even) .timeline--item .icon {
+        left: auto;
+        right: -85px;
+    }
+
+    .timeline--items > li:nth-child(even):last-child:after {
+        left: auto;
+        right: 0;
+    }
+}
+
+/* SKILL ITEMS */
+.skill--title {
+    padding-left: 0;
+    padding-right: 15px;
+    border-left-width: 0;
+    border-right: 5px solid #fff;
+}
+
+.skill--title:before {
+    left: auto;
+    right: -5px;
+}
+
+.skill--count {
+    float: left;
+}
+
+/* POST ITEMS */
+.post--img .date {
+    left: auto;
+    right: 0;
+}
+
+.post--action a .fa {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.post--date {
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.post--meta .nav > li > .fa {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.post--nav .prev .fa {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.post--nav .next .fa {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.post--share > span {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* COMMENT ITEMS */
+.comment--item .info .meta {
+    float: right;
+}
+
+.comment--item .info .action {
+    float: left;
+}
+
+.comment--item .img {
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.comment--item .img:before {
+    left: -30px;
+    right: 0;
+}
+
+.comment--items .comment--items {
+    padding-left: 0;
+    padding-right: 130px;
+}
+
+@media screen and (max-width: 991px) {
+    .comment--items .comment--items {
+        padding-right: 0;
+    }
+}
+
+/*------------------------------------*\
+    WIDGETS
+\*------------------------------------*/
+/* SEARCH WIDGET */
+.search--widget button {
+    left: 0;
+    right: auto;
+}
+
+/* LINKS WIDGET */
+.links--widget .nav > li > a {
+    padding-left: 0;
+    padding-right: 16px;
+}
+
+.links--widget .nav > li > a:before {
+    content: "\f100";
+    left: auto;
+    right: 0;
+}
+
+/*------------------------------------*\
+    HEADER SECTION
+\*------------------------------------*/
+.header--navbar > .container .navbar-brand {
+    margin-right: 0;
+}
+
+.header--nav-links {
+    float: left !important;
+}
+
+.header--nav-links > li > a > .caret {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .header--nav-links {
+        float: none !important;
+    }
+    
+    .header--nav-links > li {
+        float: none;
+    }
+}
+
+/*------------------------------------*\
+    COMING SOON SECTION
+\*------------------------------------*/
+.cs--content .newsletter button {
+    left: 0;
+    right: auto;
+}

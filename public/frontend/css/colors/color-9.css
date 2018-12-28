@@ -1,0 +1,151 @@
+/*
+
+[Theme Color Stylesheet]
+
+Project     : JD - Responsive Personal vCard / CV / Resume Template
+Version     : 1.0
+Author      : ThemeLooks
+Author URI  : https://themeforest.net/user/themelooks
+
+*/
+
+/*------------------------------------*\
+    COLOR
+\*------------------------------------*/
+a,
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link.active,
+.nav li a:hover,
+.nav li.active > a,
+.nav li.active > a:hover,
+.nav li.active > a:focus,
+.nav li.open > a,
+.nav li.open > a:hover,
+.nav li.open > a:focus,
+.btn-default,
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled].focus,
+.btn-white:hover,
+.btn-white:focus,
+.btn-white.focus,
+.btn-white:active,
+.btn-white:active:hover,
+.btn-white:active:focus,
+.btn-white:active.focus,
+.btn-white.active,
+.btn-white.active:hover,
+.btn-white.active:focus,
+.btn-white.active.focus,
+.open > .dropdown-toggle.btn-white,
+.open > .dropdown-toggle.btn-white:hover,
+.open > .dropdown-toggle.btn-white:focus,
+.open > .dropdown-toggle.btn-white.focus,
+.nav > li > a.btn-white:hover,
+.nav > li > a.btn-white:focus,
+.nav > li.active > a.btn-white,
+.text-primary,
+.page--breadcrumb .breadcrumb li.active,
+.portfolio--filter-menu .nav > li:hover,
+.portfolio--filter-menu .nav > li.active {
+    color: #179ea8;
+}
+
+/*------------------------------------*\
+    BACKGROUND COLOR
+\*------------------------------------*/
+.btn-default:before,
+.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus,
+.bg-primary,
+.section--title .h2:before,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li.active > a,
+.pagination > li.active > a:hover,
+.pagination > li.active > span,
+.pagination > li.active > span:hover,
+.service--block .icon,
+.timeline--block .title .h5:after,
+.skill--title:before,
+.skill--progress,
+.post--img .date:before,
+.footer--social .nav > li > a:hover,
+.cs--content .social .nav > li > a:hover {
+    background-color: #179ea8;
+}
+
+::-moz-selection {
+    background-color: #179ea8;
+}
+
+::selection {
+    background-color: #179ea8;
+}
+
+/*------------------------------------*\
+    BORDER COLOR
+\*------------------------------------*/
+.btn-default,
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled].focus,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:active:hover,
+.btn-default:active:focus,
+.btn-default:active.focus,
+.btn-default.active,
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default.focus,
+.nav > li > a.btn-default:hover,
+.nav > li > a.btn-default:focus,
+.nav > li.active > a.btn-default,
+.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus,
+.form-control:focus,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li.active > a,
+.pagination > li.active > a:hover,
+.pagination > li.active > span,
+.pagination > li.active > span:hover,
+.widget--title .h4:before,
+.search--widget .form-control:focus,
+.service--block:hover,
+.service--block .icon,
+.contact--info-block .icon:before,
+.banner--content .name .h2,
+.cs--content .social .nav > li > a:hover {
+    border-color: #179ea8;
+}
+
+.cs--content .title .h2:after {
+    border-bottom-color: #179ea8;
+}
