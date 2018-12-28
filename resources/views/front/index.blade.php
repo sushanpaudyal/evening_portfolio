@@ -67,7 +67,7 @@
     <!-- Header Section End -->
 
     <!-- Banner Section Start -->
-    <section id="banner" class="banner--section" data-bg-parallax="img/banner-img/bg.jpg" data-overlay="0.8">
+    <section id="banner" class="banner--section" data-bg-parallax="{{asset('public/adminpanel/uploads/slider/'.$slider->image)}}" data-overlay="0.8">
         <div class="vc--parent">
             <div class="vc--child">
                 <div class="container">
@@ -80,15 +80,17 @@
                                 </div>
 
                                 <div class="name text-uppercase">
-                                    <h3 class="h2 text-white">Jhon Doe</h3>
+                                    <h3 class="h2 text-white">{{$slider->name}}</h3>
                                 </div>
 
                                 <div class="role fs--18 fw--700 text-white">
-                                    <p>Professional Web and Graphic Designer</p>
+                                    <p>{{$slider->designation}}</p>
                                 </div>
 
                                 <div class="desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ullam iure, libero assumenda mollitia, architecto voluptate, vel quasi voluptatibus, dolorum illum.</p>
+                                    <p>
+                                        {!! htmlspecialchars_decode($slider->content) !!}
+                                    </p>
                                 </div>
 
                                 <div class="action">
