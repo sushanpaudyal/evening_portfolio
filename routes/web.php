@@ -30,6 +30,10 @@ Route::group(['middleware' => ['auth']], function(){
 //    Sliders Routes
     Route::get('/admin/slider', 'SliderController@index')->name('slider');
     Route::post('/admin/slider/{id}', 'SliderController@update')->name('slider.update');
+
+//    About Routes
+    Route::get('/admin/about', 'AboutController@index')->name('about');
+    Route::post('/admin/about/{id}', 'AboutController@update')->name('about.update');
 });
 
 

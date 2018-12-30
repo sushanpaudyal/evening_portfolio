@@ -120,7 +120,7 @@
                 <div class="col-md-6 pb--60">
                     <!-- Image Block Start -->
                     <div class="img--block">
-                        <img src="{{asset('public/frontend/img/about-img/01.jpg')}}" alt="">
+                        <img src="{{asset('public/adminpanel/uploads/about/'.$about->image)}}" alt="">
                     </div>
                     <!-- Image Block End -->
                 </div>
@@ -133,12 +133,12 @@
                         </div>
 
                         <div class="details pt--30 text-dark">
-                            <p>Duis aute dolor sit amet, consectetur adipisicing elit. Facere soluta, totam nihil minima, recusandae sapiente saepe provident ullam itaque nemo, beatae minus ratione asperiores aliquid vitae, debitis sint.</p>
+                          <p>
+                            {!! htmlspecialchars_decode($about->content) !!}
+                          </p>
                         </div>
 
-                        <div class="details pt--30">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ea aliquid nostrum rem. Asperiores molestiae magni obcaecati aliquam quam aliquid reiciendis corrupti excepturi perferendis ab aut, inventore sunt hic iusto.</p>
-                        </div>
+
 
                         <div class="info pt--50">
                             <table class="ff--primary">
@@ -148,35 +148,35 @@
                                         <i class="fa fa-calendar"></i>
                                         <span>Brithday</span>
                                     </th>
-                                    <td>12/10/1990</td>
+                                    <td>{{$about->dob}}</td>
                                 </tr>
                                 <tr>
                                     <th>
                                         <i class="fa fa-phone"></i>
                                         <span>Phone</span>
                                     </th>
-                                    <td><a href="tel:+123123123456" class="btn-link">(+123) 123 123456</a></td>
+                                    <td><a href="tel:+123123123456" class="btn-link">{{$about->phone}}</a></td>
                                 </tr>
                                 <tr>
                                     <th>
                                         <i class="fa fa-envelope"></i>
                                         <span>Email</span>
                                     </th>
-                                    <td><a href="mailto:john@example.com" class="btn-link">john@example.com</a></td>
+                                    <td><a href="mailto:john@example.com" class="btn-link">{{$about->email}}</a></td>
                                 </tr>
                                 <tr>
                                     <th>
                                         <i class="fa fa-skype"></i>
                                         <span>Skype</span>
                                     </th>
-                                    <td>john_doe</td>
+                                    <td>{{$about->skype}}</td>
                                 </tr>
                                 <tr>
                                     <th>
                                         <i class="fa fa-globe"></i>
                                         <span>Website</span>
                                     </th>
-                                    <td><a href="www.johndoe.com" class="btn-link">www.johndoe.com</a></td>
+                                    <td><a href="www.johndoe.com" class="btn-link">{{$about->website}}</a></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -184,15 +184,11 @@
 
                         <div class="social text-dark pt--30">
                             <ul class="nav">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="{{$about->fb}}" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="{{$about->twitter}}"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="{{$about->gmail}}"><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href="{{$about->linkedin}}"><span class="fa fa-linkedin"></span></a></li>
                             </ul>
-                        </div>
-
-                        <div class="action pt--60">
-                            <a href="#" class="btn btn-default">Download Resume</a>
                         </div>
                     </div>
                     <!-- About Block End -->

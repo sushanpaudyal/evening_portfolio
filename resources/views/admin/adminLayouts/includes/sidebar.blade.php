@@ -51,6 +51,13 @@
                     </a>
                 </li>
 
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('about')}}" aria-expanded="false">
+                        <i class="mdi mdi-content-paste"></i>
+                        <span class="hide-menu">About</span>
+                    </a>
+                </li>
+
 
 
 
