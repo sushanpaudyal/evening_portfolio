@@ -34,6 +34,14 @@ Route::group(['middleware' => ['auth']], function(){
 //    About Routes
     Route::get('/admin/about', 'AboutController@index')->name('about');
     Route::post('/admin/about/{id}', 'AboutController@update')->name('about.update');
+
+//    Service Routes
+    Route::get('/admin/service/create', 'ServicesController@create')->name('service.create');
+    Route::post('/admin/service/store', 'ServicesController@store')->name('service.store');
+    Route::get('/admin/service/index', 'ServicesController@index')->name('service.index');
+    Route::get('/admin/service/edit/{id}', 'ServicesController@edit')->name('service.edit');
+    Route::post('/admin/service/update/{id}', 'ServicesController@update')->name('service.update');
+    Route::get('/admin/service/delete/{id}', 'ServicesController@delete')->name('service.delete');
 });
 
 

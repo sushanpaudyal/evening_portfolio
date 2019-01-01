@@ -208,78 +208,27 @@
             <!-- Section Title End -->
 
             <div class="row AdjustRow" data-scroll-reveal="group">
+
+                @foreach($services as $service)
                 <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
                     <!-- Service Block Start -->
                     <div class="service--block">
                         <div class="icon">
-                            <i class="fa fa-heart-o"></i>
+                            <i class="fa {{$service->icon}}"></i>
                         </div>
 
                         <div class="title">
-                            <h3 class="h4">Amazing Design</h3>
+                            <h3 class="h4">{{$service->name}}</h3>
                         </div>
 
                         <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit excepturi eum, consequatur quas cumque vel.</p>
+                            <p>{!! htmlspecialchars_decode($service->body) !!}</p>
                         </div>
                     </div>
                     <!-- Service Block End -->
                 </div>
 
-                <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
-                    <!-- Service Block Start -->
-                    <div class="service--block">
-                        <div class="icon">
-                            <i class="fa fa-cogs"></i>
-                        </div>
-
-                        <div class="title">
-                            <h3 class="h4">Development</h3>
-                        </div>
-
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit excepturi eum, consequatur quas cumque vel.</p>
-                        </div>
-                    </div>
-                    <!-- Service Block End -->
-                </div>
-
-                <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
-                    <!-- Service Block Start -->
-                    <div class="service--block">
-                        <div class="icon">
-                            <i class="fa fa-support"></i>
-                        </div>
-
-                        <div class="title">
-                            <h3 class="h4">24/7 Support</h3>
-                        </div>
-
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit excepturi eum, consequatur quas cumque vel.</p>
-                        </div>
-                    </div>
-                    <!-- Service Block End -->
-                </div>
-
-                <div class="col-md-3 col-xs-6 col-xxs-12 pb--60">
-                    <!-- Service Block Start -->
-                    <div class="service--block">
-                        <div class="icon">
-                            <i class="fa fa-paint-brush"></i>
-                        </div>
-
-                        <div class="title">
-                            <h3 class="h4">Redesign</h3>
-                        </div>
-
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit excepturi eum, consequatur quas cumque vel.</p>
-                        </div>
-                    </div>
-                    <!-- Service Block End -->
-                </div>
-            </div>
+               @endforeach
         </div>
     </section>
     <!-- Services Section End -->
