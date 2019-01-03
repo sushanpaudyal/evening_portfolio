@@ -44,6 +44,15 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/admin/service/edit/{id}', 'ServicesController@edit')->name('service.edit');
     Route::post('/admin/service/update/{id}', 'ServicesController@update')->name('service.update');
     Route::get('/admin/service/delete/{id}', 'ServicesController@delete')->name('service.delete');
+
+
+    // Portfolio Routes
+    Route::get('/admin/portfolio/category/create', 'PortfolioController@createCategory')->name('createCategory');
+    Route::post('/admin/portfolio/category/store', 'PortfolioController@storeCategory')->name('storeCategory');
+    Route::get('/admin/portfolio/category/view', 'PortfolioController@viewCategory')->name('viewCategory');
+    Route::get('/admin/portfolio/category/edit/{id}', 'PortfolioController@editCategory')->name('editCategory');
+    Route::post('/admin/portfolio/category/update/{id}', 'PortfolioController@updateCategory')->name('updateCategory');
+    Route::get('/admin/portfolio/category/delete/{id}', 'PortfolioController@deleteCategory')->name('deleteCategory');
 });
 
 

@@ -82,6 +82,41 @@
                 </li>
 
 
+                <li class="sidebar-item">
+                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                        <i class="icon-Car-Wheel"></i>
+                        <span class="hide-menu">Portfolio </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse  first-level">
+                        <li class="sidebar-item">
+                            <a href="{{route('createCategory')}}" class="sidebar-link">
+                                <i class="icon-Record"></i>
+                                <span class="hide-menu"> Create Category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="{{route('viewCategory')}}" class="sidebar-link">
+                                <i class="icon-Record"></i>
+                                <span class="hide-menu">View Category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="" class="sidebar-link">
+                                <i class="icon-Record"></i>
+                                <span class="hide-menu">Create Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="" class="sidebar-link">
+                                <i class="icon-Record"></i>
+                                <span class="hide-menu">View Portfolio</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
 
 
             </ul>
