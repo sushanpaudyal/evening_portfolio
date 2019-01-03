@@ -31,6 +31,8 @@
 <!-- ==== Plugins Bundle ==== -->
 <script src="{{asset('public/frontend/js/plugins.min.js')}}"></script>
 
+
+
 <!-- ==== Main Script ==== -->
 <script src="{{asset('public/frontend/js/main.js')}}"></script>
 

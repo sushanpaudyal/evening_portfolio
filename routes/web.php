@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'FrontEndController@index')->name('frontend.index');
+Route::post('/mail/sendmail', 'MailController@sendmail')->name('sendmail.mail');
+
 
 Auth::routes();
 
@@ -46,3 +48,4 @@ Route::group(['middleware' => ['auth']], function(){
 
 
 Route::get('/logout', 'AdminController@logout')->name('admin.logout');
+

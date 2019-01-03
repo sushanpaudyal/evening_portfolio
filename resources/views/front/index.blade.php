@@ -1357,37 +1357,46 @@
                 <div class="title text-center text-uppercase pb--30">
                     <h3 class="h4">You can drop me a line here</h3>
                 </div>
+                @if(Session::has('flashmessage'))
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>{{ Session::get('flashmessage')}}</strong>
+                    </div>
+                @endif
+                <form action="{{route('sendmail.mail')}}" method="post" role="form">
 
-                <form action="forms/contact-form.php">
-                    <div class="status"></div>
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+
+                    <input type="hidden" name="sendemail" value="sushan.paudyal@gmail.com">
+
 
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="name" placeholder="Name *" class="form-control" required>
+                                <input type="text" name="name" placeholder="Name *" class="form-control">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="email" name="email" placeholder="E-mail *" class="form-control" required>
+                                <input type="email" name="email" placeholder="E-mail *" class="form-control">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" name="subject" placeholder="Subject *" class="form-control" required>
+                                <input type="text" name="subject" placeholder="Subject *" class="form-control">
                             </div>
                         </div>
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name="message" placeholder="Message *" class="form-control" required></textarea>
+                                <textarea name="message" placeholder="Message *" class="form-control"></textarea>
                             </div>
                         </div>
 
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-block btn-primary">Send Message</button>
+                            <input type="submit" class="btn btn-block btn-primary" value="Send Message">
                         </div>
                     </div>
                 </form>

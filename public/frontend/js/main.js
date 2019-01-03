@@ -93,42 +93,11 @@ Author URI  : https://themeforest.net/user/themelooks
         /* ------------------------------------------------------------------------- *
          * FORM VALIDATION
          * ------------------------------------------------------------------------- */
-        var $formValidation = $('[data-form="validate"] form');
-        
-        $formValidation.each(function () {
-            var $t = $(this);
-            
-            $t.validate({
-                errorPlacement: function () {
-                    return true;
-                }
-            });
-        });
 
         /* ------------------------------------------------------------------------- *
          * AJAX FORM
          * ------------------------------------------------------------------------- */
-        var $ajaxForm = $('[data-form="ajax"] form');
-        
-        $ajaxForm.each(function () {
-            var $form = $(this),
-                $formStatus = $form.find('.status');
-            
-            $form.validate({
-                errorPlacement: function () {
-                    return true;
-                },
-                submitHandler: function (el) {
-                    var $form = $(el),
-                        formUrl = $form.attr('action'),
-                        formData = $form.serialize();
 
-                    $.post(formUrl, formData, function (res) {
-                        $formStatus.show().html(res).delay(6000).fadeOut('show');
-                    });
-                }
-            });
-        });
         
         /* ------------------------------------------------------------------------- *
          * SCROLL
@@ -136,7 +105,6 @@ Author URI  : https://themeforest.net/user/themelooks
         var $scroll = $('[data-trigger="scroll"]');
 
         $scroll.on('click', function (e) {
-            e.preventDefault();
 
             e.$target = $(this).attr('href');
 
@@ -245,7 +213,6 @@ Author URI  : https://themeforest.net/user/themelooks
         var $backToTop = $('#backToTop');
 
         $backToTop.on('click', 'a', function (e) {
-            e.preventDefault();
 
             $('html, body').animate({
                 scrollTop: 0
@@ -307,7 +274,6 @@ Author URI  : https://themeforest.net/user/themelooks
         var $portfolioFilterMenu = $('.portfolio--filter-menu');
 
         $portfolioFilterMenu.on('click', 'li', function (e) {
-            e.preventDefault();
 
             var $t = $(this),
                 f = $t.data('target'),
