@@ -52,7 +52,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/admin/portfolio/category/view', 'PortfolioController@viewCategory')->name('viewCategory');
     Route::get('/admin/portfolio/category/edit/{id}', 'PortfolioController@editCategory')->name('editCategory');
     Route::post('/admin/portfolio/category/update/{id}', 'PortfolioController@updateCategory')->name('updateCategory');
-    Route::get('/admin/portfolio/category/delete/{id}', 'PortfolioController@deleteCategory')->name('deleteCategory');
+    Route::get('/admin/delete-category/{id}', 'PortfolioController@deleteCategory')->name('deleteCategory');
 });
 
 

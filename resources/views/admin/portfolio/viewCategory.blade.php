@@ -79,7 +79,7 @@
                                             <a href="{{route('editCategory', $value->id)}}" class="btn btn-primary">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a class="deleteRecord" rel="{{$value->id}}" rel1="delete-category" href="{{route('deleteCategory', $value->id)}}" class="btn btn-danger">
+                                            <a  rel="{{$value->id}}" rel1="delete-category" href="javascript:" class="btn btn-danger deleteRecord">
                                                 <i class="fa fa-trash"></i>
                                             </a>
                                         </td>
@@ -135,7 +135,7 @@
                     confirmButtonText: "Yes, Delete it!"
                 },
                    function(){
-                       window.location.href="/admin/"+deleteFunction+"/"+id;
+                       window.location.href="/evening_portfolio/admin/"+deleteFunction+"/"+id;
                    }
                 );
 
